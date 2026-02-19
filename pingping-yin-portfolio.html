@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pingping Yin | Educator & Journalist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple-deep: #1a0a2e;
+    --purple-rich: #2d1257;
+    --purple-magic: #5c2d91;
+    --purple-bright: #8b5cf6;
+    --purple-glow: #c084fc;
+    --gold: #f0c040;
+    --gold-light: #fde68a;
+    --cream: #fdf6e3;
+    --white: #ffffff;
+    --star-white: rgba(255,255,255,0.85);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--purple-deep);
+    color: var(--cream);
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ── STARS BACKGROUND ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 10% 15%, var(--star-white), transparent),
+      radial-gradient(1px 1px at 25% 40%, var(--star-white), transparent),
+      radial-gradient(1.5px 1.5px at 40% 8%, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1px 1px at 55% 30%, var(--star-white), transparent),
+      radial-gradient(1px 1px at 70% 55%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 80% 20%, var(--star-white), transparent),
+      radial-gradient(1px 1px at 90% 70%, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1px 1px at 15% 65%, var(--star-white), transparent),
+      radial-gradient(1px 1px at 35% 80%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1.5px 1.5px at 60% 90%, var(--star-white), transparent),
+      radial-gradient(1px 1px at 75% 10%, rgba(255,255,255,0.7), transparent),
+      radial-gradient(1px 1px at 5% 85%, var(--star-white), transparent),
+      radial-gradient(1px 1px at 45% 55%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 88% 45%, var(--star-white), transparent),
+      radial-gradient(2px 2px at 20% 25%, rgba(192,132,252,0.5), transparent),
+      radial-gradient(2px 2px at 65% 15%, rgba(192,132,252,0.4), transparent),
+      radial-gradient(1px 1px at 50% 70%, var(--star-white), transparent),
+      radial-gradient(1px 1px at 30% 50%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1px 1px at 95% 30%, var(--star-white), transparent);
+    pointer-events: none;
+    z-index: 0;
+    animation: twinkle 6s infinite alternate;
+  }
+
+  @keyframes twinkle {
+    0% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(26, 10, 46, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(192,132,252,0.2);
+  }
+
+  .nav-logo {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--purple-glow);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: var(--gold);
+    text-shadow: 0 0 15px var(--gold);
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+  }
+
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: float 8s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .orb1 {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(92,45,145,0.4), transparent 70%);
+    top: 10%; left: -10%;
+    animation-delay: 0s;
+  }
+
+  .orb2 {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(139,92,246,0.25), transparent 70%);
+    bottom: 0; right: -5%;
+    animation-delay: -3s;
+  }
+
+  .orb3 {
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(240,192,64,0.15), transparent 70%);
+    top: 40%; left: 40%;
+    animation-delay: -5s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-30px) scale(1.05); }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+  .hero-spell {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.75rem;
+    letter-spacing: 6px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.2s forwards;
+  }
+
+  .hero-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    text-shadow: 0 0 40px rgba(192,132,252,0.5), 0 0 80px rgba(92,45,145,0.3);
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.4s forwards;
+  }
+
+  .hero-name span {
+    color: var(--gold);
+    text-shadow: 0 0 30px rgba(240,192,64,0.6);
+  }
+
+  .hero-tagline {
+    font-family: 'Crimson Pro', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-style: italic;
+    color: var(--purple-glow);
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.6s forwards;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    color: rgba(253,246,227,0.7);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.8s forwards;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp 0.8s 1s forwards;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, var(--purple-magic), var(--purple-bright));
+    color: white;
+    padding: 0.85rem 2rem;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(139,92,246,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-primary:hover::before { left: 100%; }
+  .btn-primary:hover {
+    box-shadow: 0 6px 30px rgba(139,92,246,0.6), 0 0 20px rgba(192,132,252,0.3);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    border: 1.5px solid var(--gold);
+    color: var(--gold);
+    padding: 0.85rem 2rem;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+    background: transparent;
+  }
+
+  .btn-outline:hover {
+    background: rgba(240,192,64,0.1);
+    box-shadow: 0 0 20px rgba(240,192,64,0.3);
+    transform: translateY(-2px);
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── DIVIDER ── */
+  .magic-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 1rem 0;
+  }
+
+  .magic-divider::before, .magic-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--purple-glow));
+  }
+
+  .magic-divider::after {
+    background: linear-gradient(90deg, var(--purple-glow), transparent);
+  }
+
+  .magic-divider span { color: var(--gold); font-size: 1.2rem; }
+
+  /* ── SECTIONS ── */
+  section {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 2rem;
+  }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.65rem;
+    letter-spacing: 6px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .section-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 30px rgba(192,132,252,0.4);
+  }
+
+  .section-under {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), var(--purple-glow));
+    margin-bottom: 3rem;
+    border-radius: 2px;
+  }
+
+  /* ── ABOUT ── */
+  #about {
+    background: linear-gradient(135deg, rgba(45,18,87,0.5), rgba(26,10,46,0.8));
+    border-top: 1px solid rgba(192,132,252,0.15);
+    border-bottom: 1px solid rgba(192,132,252,0.15);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about-portrait {
+    position: relative;
+  }
+
+  .portrait-frame {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, var(--purple-rich), var(--purple-magic));
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(192,132,252,0.3);
+    box-shadow: 0 0 40px rgba(92,45,145,0.4), 0 0 80px rgba(92,45,145,0.2);
+    position: relative;
+    overflow: hidden;
+    font-size: 5rem;
+    color: var(--purple-glow);
+  }
+
+  .portrait-frame::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, var(--gold), var(--purple-glow), var(--gold));
+    z-index: -1;
+    border-radius: 4px;
+    opacity: 0.6;
+    animation: borderGlow 3s linear infinite;
+  }
+
+  @keyframes borderGlow {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.4; }
+  }
+
+  .portrait-emoji {
+    font-size: 6rem;
+    filter: drop-shadow(0 0 20px rgba(192,132,252,0.6));
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .about-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.35rem 0.8rem;
+    border-radius: 2px;
+    border: 1px solid rgba(192,132,252,0.4);
+    color: var(--purple-glow);
+    background: rgba(92,45,145,0.2);
+  }
+
+  .badge.gold {
+    border-color: rgba(240,192,64,0.5);
+    color: var(--gold-light);
+    background: rgba(240,192,64,0.1);
+  }
+
+  .about-text p {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: rgba(253,246,227,0.85);
+    margin-bottom: 1.2rem;
+  }
+
+  .about-text p strong {
+    color: var(--gold-light);
+    font-weight: 600;
+  }
+
+  .languages {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .lang-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .lang-chip .flag { font-size: 1.5rem; }
+  .lang-chip .lang-name {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--purple-glow);
+  }
+  .lang-chip .lang-level {
+    font-size: 0.65rem;
+    color: var(--gold);
+  }
+
+  /* ── EXPERIENCE ── */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, var(--gold), var(--purple-glow), transparent);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+  }
+
+  .timeline-item::before {
+    content: '✦';
+    position: absolute;
+    left: -0.7rem;
+    top: 0;
+    color: var(--gold);
+    font-size: 1rem;
+    text-shadow: 0 0 10px var(--gold);
+    transform: translateX(-50%);
+    background: var(--purple-deep);
+    padding: 0 2px;
+  }
+
+  .timeline-date {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+  }
+
+  .timeline-company {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.85rem;
+    color: var(--purple-glow);
+    margin-bottom: 0.2rem;
+    letter-spacing: 1px;
+  }
+
+  .timeline-role {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+  }
+
+  .timeline-desc {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(253,246,227,0.75);
+  }
+
+  /* ── AWARDS ── */
+  #awards {
+    background: linear-gradient(135deg, rgba(26,10,46,0.9), rgba(45,18,87,0.4));
+    border-top: 1px solid rgba(192,132,252,0.1);
+    border-bottom: 1px solid rgba(192,132,252,0.1);
+  }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .award-card {
+    background: rgba(45,18,87,0.3);
+    border: 1px solid rgba(192,132,252,0.2);
+    border-radius: 4px;
+    padding: 1.5rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .award-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), var(--purple-glow));
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+  }
+
+  .award-card:hover::before { transform: scaleX(1); }
+
+  .award-card:hover {
+    border-color: rgba(192,132,252,0.4);
+    background: rgba(92,45,145,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(92,45,145,0.3);
+  }
+
+  .award-year {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+
+  .award-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.4rem;
+  }
+
+  .award-org {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--purple-glow);
+    margin-bottom: 0.5rem;
+  }
+
+  .award-desc {
+    font-size: 0.85rem;
+    color: rgba(253,246,227,0.65);
+    line-height: 1.6;
+  }
+
+  /* ── SKILLS ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    background: rgba(45,18,87,0.3);
+    border: 1px solid rgba(192,132,252,0.2);
+    border-radius: 4px;
+    padding: 1.5rem;
+  }
+
+  .skill-category-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .skill-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skill-list li {
+    font-size: 0.9rem;
+    color: rgba(253,246,227,0.8);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .skill-list li::before {
+    content: '✦';
+    color: var(--purple-bright);
+    font-size: 0.5rem;
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: linear-gradient(180deg, rgba(26,10,46,0.5), var(--purple-rich));
+    text-align: center;
+    border-top: 1px solid rgba(192,132,252,0.15);
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .contact-card {
+    background: rgba(45,18,87,0.4);
+    border: 1px solid rgba(192,132,252,0.25);
+    border-radius: 4px;
+    padding: 1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    min-width: 220px;
+  }
+
+  .contact-card:hover {
+    background: rgba(92,45,145,0.3);
+    border-color: var(--purple-glow);
+    box-shadow: 0 0 20px rgba(192,132,252,0.2);
+    transform: translateY(-3px);
+  }
+
+  .contact-icon { font-size: 1.5rem; }
+
+  .contact-info .label {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .contact-info .value {
+    font-size: 0.9rem;
+    color: var(--white);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--purple-deep);
+    border-top: 1px solid rgba(192,132,252,0.1);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: rgba(253,246,227,0.4);
+    letter-spacing: 1px;
+  }
+
+  footer .magic-quote {
+    font-family: 'Crimson Pro', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--purple-glow);
+    margin-bottom: 0.5rem;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { gap: 1rem; }
+    .nav-links a { font-size: 0.72rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-portrait { max-width: 250px; margin: 0 auto; }
+    .hero-cta { flex-direction: column; align-items: center; }
+  }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ── SPARKLING CURSOR ── */
+  .spark {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    font-size: 1rem;
+    animation: sparkFly 0.8s ease-out forwards;
+  }
+
+  @keyframes sparkFly {
+    0% { opacity: 1; transform: scale(1) translate(0,0); }
+    100% { opacity: 0; transform: scale(0.2) translate(var(--dx), var(--dy)); }
+  }
+
+  /* ── MARYLAND CITATION ── */
+  .md-citation {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(240,192,64,0.1);
+    border: 1px solid rgba(240,192,64,0.3);
+    border-radius: 2px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.78rem;
+    color: var(--gold-light);
+    margin-top: 1.5rem;
+  }
+
+  /* ── TEACHING PHILOSOPHY ── */
+  .philosophy-block {
+    background: rgba(45,18,87,0.3);
+    border-left: 3px solid var(--gold);
+    padding: 1.5rem 2rem;
+    border-radius: 0 4px 4px 0;
+    margin-top: 2rem;
+  }
+
+  .philosophy-block blockquote {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.8;
+  }
+
+  .philosophy-block cite {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">✦ PY</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+
+  <div class="hero-content">
+    <div class="hero-spell">✦ Educator · Journalist · Storyteller ✦</div>
+    <h1 class="hero-name">Pingping<br><span>Yin</span></h1>
+    <p class="hero-tagline">Where words become windows to the world</p>
+    <p class="hero-subtitle">
+      Award-winning journalist turned passionate educator, bringing 15+ years of cross-cultural storytelling from Xinhua News Agency to classrooms bridging East and West.
+      Now seeking to inspire the next generation at international schools in Beijing.
+    </p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn-primary">Explore My Journey</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <div class="portrait-frame">
+          <span class="portrait-emoji">🌟</span>
+        </div>
+        <div class="about-badges" style="margin-top: 1rem;">
+          <span class="badge gold">📜 DC Teaching Certified</span>
+          <span class="badge">🌸 JLPT N2</span>
+          <span class="badge">🏛️ Northwestern MS</span>
+          <span class="badge gold">⭐ Maryland State Citation</span>
+        </div>
+
+        <div class="languages" style="margin-top: 1.5rem;">
+          <div class="lang-chip">
+            <span class="flag">🇨🇳</span>
+            <span class="lang-name">Mandarin</span>
+            <span class="lang-level">Native</span>
+          </div>
+          <div class="lang-chip">
+            <span class="flag">🇺🇸</span>
+            <span class="lang-name">English</span>
+            <span class="lang-level">Fluent</span>
+          </div>
+          <div class="lang-chip">
+            <span class="flag">🇯🇵</span>
+            <span class="lang-name">Japanese</span>
+            <span class="lang-level">JLPT N2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-label">My Story</span>
+        <h2 class="section-title">A Journalist Who<br>Fell in Love With Teaching</h2>
+        <div class="section-under"></div>
+
+        <p class="reveal">
+          I'm <strong>Pingping Yin</strong> — journalist, educator, and storyteller fluent in both Chinese and English. I spent 13 years at <strong>Xinhua News Agency</strong>, crafting in-depth investigations on education, healthcare, and culture that reached the highest levels of Chinese government. Then Northwestern's Medill School gave me a master's — and a new calling.
+        </p>
+        <p class="reveal reveal-delay-1">
+          Since arriving in the United States, I've taught Mandarin from PreK through 5th grade at Washington Yu Ying Public Charter School, conducted investigative education reporting at Hearst Television, and contributed stories about the <strong>Asian American community</strong> to ASAMNews. The thread connecting it all? A deep belief that stories — told well — change lives.
+        </p>
+        <p class="reveal reveal-delay-2">
+          Now, I'm ready to bring that full breadth of experience back home to <strong>Beijing</strong>, where I want to teach at international schools — weaving journalism's rigor, cultural bridge-building, and genuine love of learning into every classroom.
+        </p>
+
+        <div class="philosophy-block reveal reveal-delay-3">
+          <blockquote>
+            "A great classroom is the most exciting newsroom in the world — every student is a story worth telling."
+          </blockquote>
+          <cite>— Pingping Yin</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <span class="section-label">Professional Path</span>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="section-under"></div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2023 – Present</div>
+        <div class="timeline-company">Washington Yu Ying Public Charter School</div>
+        <div class="timeline-role">Chinese Teacher & School Translator</div>
+        <div class="timeline-desc">
+          Delivering Mandarin instruction to students from PreK through 5th grade; providing operational support for the Aftercare program; and serving as the school's official Chinese translator for internal and external communications.
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-date">2024 – Present</div>
+        <div class="timeline-company">ASAMNews</div>
+        <div class="timeline-role">Contributor</div>
+        <div class="timeline-desc">
+          Covering the Asian American and Pacific Islander community in the Greater Washington Area through print, video, and podcast storytelling — with a special focus on civic engagement, educational equity, and community advocacy.
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-company">Hearst Television — National Investigative Unit</div>
+        <div class="timeline-role">Reporter & Researcher</div>
+        <div class="timeline-desc">
+          Conducted investigative reporting on U.S. education policy through in-depth interviews and data analysis. Coverage of campus safety following a school shooting was broadcast by dozens of local TV stations across the country.
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-3">
+        <div class="timeline-date">2009 – 2022</div>
+        <div class="timeline-company">Xinhua News Agency — Xinhua Daily Telegraph</div>
+        <div class="timeline-role">Reporter, Editor & Commentator</div>
+        <div class="timeline-desc">
+          13 years producing investigative features and commentary on education, culture, healthcare, and technology. Reports were twice commended by members of the Politburo Standing Committee and circulated system-wide by the Central Propaganda Department for collective study.
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 1rem;">
+      <span class="section-label" style="margin-top: 3rem; display:block;">Community & Mentorship</span>
+      <h3 style="font-family: 'Cinzel Decorative', serif; font-size:1.2rem; color: var(--white); margin-bottom: 0.5rem;">Related Experience</h3>
+      <div class="section-under"></div>
+      <div class="awards-grid">
+        <div class="award-card reveal">
+          <div class="award-year">2025 – Present</div>
+          <div class="award-name">Judge — National Press Club Lewis Scholarship</div>
+          <div class="award-desc">Evaluating undergraduate journalism scholarship applications for one of the country's most prestigious press organizations.</div>
+        </div>
+        <div class="award-card reveal reveal-delay-1">
+          <div class="award-year">2025 – Present</div>
+          <div class="award-name">Judge — Asian American Annual Journalism Awards</div>
+          <div class="award-desc">Recognizing excellence in journalism covering Asian American communities.</div>
+        </div>
+        <div class="award-card reveal reveal-delay-2">
+          <div class="award-year">2024 – Present</div>
+          <div class="award-name">Industry Mentor — Northwestern University Medill</div>
+          <div class="award-desc">Guiding undergraduate journalism students in career development as an official Medill industry mentor.</div>
+        </div>
+        <div class="award-card reveal reveal-delay-3">
+          <div class="award-year">2024 – Present</div>
+          <div class="award-name">Guest Lecturer — Youth Press Programs</div>
+          <div class="award-desc">Leading workshops in Howard County MD, Montgomery County MD, and at Beijing's Yuying School, nurturing the next generation of young journalists and thinkers.</div>
+        </div>
+        <div class="award-card reveal">
+          <div class="award-year">2024</div>
+          <div class="award-name">PTA Vice President — Hoffman-Boston Elementary</div>
+          <div class="award-desc">Serving Arlington, Virginia's school community through active parent leadership and family engagement.</div>
+        </div>
+        <div class="award-card reveal reveal-delay-1">
+          <div class="award-year">2024</div>
+          <div class="award-name">T-Ball Coach — Arlington Babe Ruth League</div>
+          <div class="award-desc">Coaching youth baseball in Arlington, Virginia — because great teaching happens on the field too.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="section-inner">
+    <span class="section-label">Recognition</span>
+    <h2 class="section-title">Awards & Honors</h2>
+    <div class="section-under"></div>
+
+    <div class="awards-grid">
+      <div class="award-card reveal">
+        <div class="award-year">🏛️ 2024</div>
+        <div class="award-name">Maryland General Assembly Citation</div>
+        <div class="award-org">Maryland State Legislature</div>
+        <div class="award-desc">Official state recognition for outstanding contributions to the Asian American community in Maryland.</div>
+      </div>
+
+      <div class="award-card reveal reveal-delay-1">
+        <div class="award-year">🎓 2023</div>
+        <div class="award-name">Harrington Award</div>
+        <div class="award-org">Northwestern University Medill School of Journalism</div>
+        <div class="award-desc">Medill's highest graduate student honor, awarded to the most outstanding graduating master's student of the year.</div>
+      </div>
+
+      <div class="award-card reveal reveal-delay-2">
+        <div class="award-year">📰 2022</div>
+        <div class="award-name">William H. Jones Memorial Scholarship</div>
+        <div class="award-org">Chicago Tribune Foundation</div>
+        <div class="award-desc">Awarded for exceptional academic performance at the Medill School of Journalism.</div>
+      </div>
+
+      <div class="award-card reveal reveal-delay-3">
+        <div class="award-year">🌆 2016</div>
+        <div class="award-name">Inclusive News Award</div>
+        <div class="award-org">Chinese Association for History of Journalism & China Banking Association</div>
+        <div class="award-desc">Awarded for in-depth reporting on how the sharing economy is reshaping urban planning in Shanghai.</div>
+      </div>
+
+      <div class="award-card reveal">
+        <div class="award-year">⭐ 2010, 2015</div>
+        <div class="award-name">Annual Outstanding News Award</div>
+        <div class="award-org">Xinhua News Agency</div>
+        <div class="award-desc">Xinhua's highest journalism honor, recognizing excellence in investigative reporting and public opinion journalism.</div>
+      </div>
+
+      <div class="award-card reveal reveal-delay-1">
+        <div class="award-year">✍️ 2015</div>
+        <div class="award-name">Annual Outstanding News Award</div>
+        <div class="award-org">Capital Women Journalists Association (Beijing)</div>
+        <div class="award-desc">Awarded for watchdog and investigative journalism that had significant social impact.</div>
+      </div>
+
+      <div class="award-card reveal reveal-delay-2">
+        <div class="award-year">🏦 2008</div>
+        <div class="award-name">Southern Metropolis Daily Scholarship</div>
+        <div class="award-org">Southern Media Group</div>
+        <div class="award-desc">Recognized for outstanding academic performance at Fudan University School of Journalism.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <span class="section-label">What I Bring</span>
+    <h2 class="section-title">Skills & Expertise</h2>
+    <div class="section-under"></div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-category-title">🍎 Teaching</div>
+        <ul class="skill-list">
+          <li>Mandarin Chinese Instruction (PreK–5)</li>
+          <li>ESL / English as a Second Language</li>
+          <li>Curriculum Design & Development</li>
+          <li>Differentiated Instruction</li>
+          <li>Cross-cultural Communication</li>
+          <li>Student-centered Learning</li>
+          <li>DC Foreign Language Teaching Certified</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="skill-category-title">📡 Journalism</div>
+        <ul class="skill-list">
+          <li>Investigative Reporting</li>
+          <li>Data Research & Analysis</li>
+          <li>Long-form Feature Writing</li>
+          <li>Editorial Commentary</li>
+          <li>Video & Podcast Storytelling</li>
+          <li>News Editing & Translation</li>
+          <li>Education Policy Reporting</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="skill-category-title">🌏 Languages & Culture</div>
+        <ul class="skill-list">
+          <li>Mandarin Chinese — Native</li>
+          <li>English — Fluent</li>
+          <li>Japanese — JLPT N2 Certified</li>
+          <li>US & Chinese Educational Systems</li>
+          <li>Asian American Community Advocacy</li>
+          <li>Bicultural Bridge-Building</li>
+        </ul>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="skill-category-title">🤝 Leadership</div>
+        <ul class="skill-list">
+          <li>Mentorship & Coaching</li>
+          <li>Youth Program Facilitation</li>
+          <li>Public Speaking & Lecturing</li>
+          <li>Community Organizing</li>
+          <li>Scholarship Judging</li>
+          <li>School Translation & Communications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="padding: 4rem 2rem;">
+  <div class="section-inner">
+    <span class="section-label">Academic Background</span>
+    <h2 class="section-title">Education</h2>
+    <div class="section-under"></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
+      <div class="award-card reveal" style="border-color: rgba(240,192,64,0.3);">
+        <div class="award-year">2022 – 2023</div>
+        <div class="award-name">Master of Science in Journalism</div>
+        <div class="award-org">Northwestern University — Medill School of Journalism</div>
+        <div class="award-desc">Graduated as the highest-achieving student in the program (Harrington Award recipient).</div>
+      </div>
+      <div class="award-card reveal reveal-delay-1">
+        <div class="award-year">2005 – 2009</div>
+        <div class="award-name">Bachelor of Science in Journalism</div>
+        <div class="award-org">Fudan University, Shanghai</div>
+        <div class="award-desc">Liberal arts experimental program; recipient of the Southern Metropolis Daily Scholarship.</div>
+      </div>
+      <div class="award-card reveal reveal-delay-2">
+        <div class="award-year">2002 – 2005</div>
+        <div class="award-name">High School</div>
+        <div class="award-org">The High School Affiliated to Renmin University of China (RDFZ)</div>
+        <div class="award-desc">Top 20 in Beijing's college entrance exam; Top 5 in Haidian District.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <span class="section-label">Let's Connect</span>
+    <h2 class="section-title">Open to Opportunities</h2>
+    <div class="section-under" style="margin: 0 auto 1rem;"></div>
+    <p style="font-family: 'Crimson Pro', serif; font-size: 1.15rem; color: rgba(253,246,227,0.75); max-width: 500px; margin: 0 auto 0.5rem; line-height: 1.8;">
+      I'm actively seeking teaching positions at international schools in Beijing. If you'd like to connect, collaborate, or invite me to your school, please reach out — I'd love to hear from you.
+    </p>
+    <div class="md-citation">
+      ⭐ Maryland General Assembly Citation Recipient, 2024
+    </div>
+
+    <div class="contact-grid">
+      <a href="mailto:yinpingping2020@gmail.com" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <div class="contact-info">
+          <span class="label">Email</span>
+          <span class="value">yinpingping2020@gmail.com</span>
+        </div>
+      </a>
+
+      <a href="tel:+17737079060" class="contact-card">
+        <span class="contact-icon">📱</span>
+        <div class="contact-info">
+          <span class="label">US Phone</span>
+          <span class="value">+1 773 707 9060</span>
+        </div>
+      </a>
+
+      <div class="contact-card" style="cursor: default;">
+        <span class="contact-icon">💬</span>
+        <div class="contact-info">
+          <span class="label">WeChat (Preferred)</span>
+          <span class="value">pipijun003</span>
+        </div>
+      </div>
+
+      <a href="https://www.linkedin.com/in/pingping-yin/" target="_blank" class="contact-card">
+        <span class="contact-icon">💼</span>
+        <div class="contact-info">
+          <span class="label">LinkedIn</span>
+          <span class="value">pingping-yin</span>
+        </div>
+      </a>
+
+      <div class="contact-card" style="cursor: default;">
+        <span class="contact-icon">📍</span>
+        <div class="contact-info">
+          <span class="label">Currently Based In</span>
+          <span class="value">Arlington, Virginia, USA</span>
+        </div>
+      </div>
+
+      <div class="contact-card" style="cursor: default;">
+        <span class="contact-icon">🏠</span>
+        <div class="contact-info">
+          <span class="label">Home</span>
+          <span class="value">Haidian, Beijing, China</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="magic-quote">"It does not do to dwell on dreams and forget to live." — J.K. Rowling</p>
+  <p>© 2025 Pingping Yin · Arlington, VA · Beijing, China · ✦ Crafted with magic ✦</p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => obs.observe(r));
+
+  // Sparkling cursor
+  const sparks = ['✦', '★', '✧', '·', '✨', '⭐'];
+  document.addEventListener('mousemove', (e) => {
+    if (Math.random() > 0.92) {
+      const spark = document.createElement('div');
+      spark.classList.add('spark');
+      spark.textContent = sparks[Math.floor(Math.random() * sparks.length)];
+      spark.style.left = e.clientX + 'px';
+      spark.style.top = e.clientY + 'px';
+      spark.style.color = Math.random() > 0.5 ? '#f0c040' : '#c084fc';
+      const angle = Math.random() * Math.PI * 2;
+      const dist = 30 + Math.random() * 50;
+      spark.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
+      spark.style.setProperty('--dy', Math.sin(angle) * dist + 'px');
+      document.body.appendChild(spark);
+      setTimeout(() => spark.remove(), 800);
+    }
+  });
+
+  // Smooth active nav
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? '#f0c040' : '';
+    });
+  });
+</script>
+</body>
+</html>
